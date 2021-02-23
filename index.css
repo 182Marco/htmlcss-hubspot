@@ -541,13 +541,15 @@ footer .h20 li:last-child {
   padding: 0 0.5vw;
 }
 
-/* classe che da stile a messaggi inviati */
+/* classe che da stile a messaggi inviati
+(non esite in HTML è creata da JS) */
 
 .styleMessage {
   background-color: rgb(173, 255, 173);
   padding: 2%;
   border-radius: 10px;
-  margin-bottom: 0.75vh;
+  margin-bottom: 1.25vh;
+  line-height: 1rem;
 }
 
 /* UTILITY */

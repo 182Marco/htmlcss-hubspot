@@ -119,28 +119,20 @@ let inputMessage = document.querySelector('#inputMessage');
 
 console.log(inputMessage.value);
 
-inputMessage.addEventListener('keypress', () => {
-  if (
-    event.keyCode == 13 &&
-    sentedMessage.innerText ==
+inputMessage.addEventListener('keypress', sentMessage);
+
+function sentMessage() {
+  if (event.keyCode == 13) {
+    if (
+      sentedMessage.innerText ==
       `Per dubbi e perplessità puoi chattare con l'operatore!`
-  ) {
-    sentedMessage.innerText = ``;
+    ) {
+      sentedMessage.innerText = ``;
+    }
     var para = document.createElement('p');
     para.innerText = inputMessage.value;
     sentedMessage.appendChild(para);
     para.classList.add('styleMessage');
     inputMessage.value = '';
-  } else if (
-    event.keyCode == 13 &&
-    sentedMessage.innerText !=
-      `Per dubbi e perplessità puoi chattare con l'operatore!`
-  ) {
-    var para = document.createElement('p');
-    para.innerText = inputMessage.value;
-    sentedMessage.appendChild(para);
-    para.classList.add('styleMessage');
-    inputMessage.value = '';
-  } else {
   }
-});
+}

@@ -62,6 +62,37 @@ header .dx ul {
   padding-left: 1.4vw;
 }
 
+/* EFFETTI DROP-DOWN SULLE NAV */
+
+.click {
+  cursor: pointer;
+}
+
+.dropDown:hover,
+.dropDown:hover i {
+  color: #fe775a;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: 0 0 10px 10px;
+  width: 210px;
+  padding: 0 10px;
+}
+
+.menu > a:hover {
+  color: #fe775a;
+}
+
+main {
+  z-index: -10;
+}
+
 /* MAIN */
 main {
   background-color: #fff4ef;
@@ -413,6 +444,91 @@ footer .h20 li:last-child {
   margin-left: 4%;
 }
 
+/* CHAT GIALLA FISSA IN BASSO A SX */
+
+#chat {
+  color: rgb(255, 206, 45);
+  position: fixed;
+  bottom: 3%;
+  left: 88%;
+  font-size: 5vw;
+}
+
+#chatWindow {
+  display: none;
+  position: absolute;
+  bottom: 110%;
+  right: 0;
+  height: 50vh;
+  width: 22vw;
+  background-color: #fff;
+  border: 3px solid #198dcc;
+  border-radius: 10px;
+}
+
+#chatWindow div:first-child {
+  height: 5vh;
+  background-color: #198dcc;
+  border: 3px solid #198dcc;
+}
+
+#chatWindow > div:nth-child(2) {
+  height: 25vh;
+  padding: 0 0.5vw;
+}
+
+#chatWindow div:last-child {
+  height: 5vh;
+  background-color: lightgrey;
+}
+
+/* interno barra account */
+
+#chatWindow > div > img {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(0%, -50%);
+  height: 2.6vw;
+  width: 2.6vw;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#chatWindow > div > span {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* scritta puoi chattare con operatore */
+
+#chatWindow > div > p {
+  padding-top: 0.5vh;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+/* input utente */
+
+#chatWindow > input {
+  position: absolute;
+  bottom: 1.5%;
+  outline: none;
+  border: 0;
+  border-top: 1px solid #999;
+  margin-top: 0vh;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  padding: 0 0.5vw;
+}
+
 /* UTILITY */
 
 .clear-fix::after {
@@ -565,6 +681,9 @@ section li {
 .w10 {
   width: 10%;
 }
+.w15 {
+  width: 15%;
+}
 .w20 {
   width: 20%;
 }
@@ -610,6 +729,9 @@ section li {
 .h10 {
   height: 10%;
 }
+.h15 {
+  height: 15%;
+}
 
 .h20 {
   height: 20%;
@@ -622,6 +744,9 @@ section li {
 }
 .h33 {
   height: calc(100% / 3);
+}
+.h35 {
+  height: 35%;
 }
 .h40 {
   height: 40%;
@@ -640,6 +765,9 @@ section li {
 }
 .h80 {
   height: 80%;
+}
+.h85 {
+  height: 85%;
 }
 .h90 {
   height: 90%;
@@ -714,41 +842,4 @@ section li {
 
 i {
   cursor: pointer;
-}
-
-/* esclusione su mappamondopo in alto dx pagina */
-
-i[class='fas fa-globe-africa'] {
-  cursor: default;
-}
-
-/* EFFETTI DROP-DOWN */
-
-.click {
-  cursor: pointer;
-}
-
-.dropDown:hover,
-.dropDown:hover i {
-  color: #fe775a;
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  top: 120%;
-  left: 0;
-  background-color: #eee;
-  border: 1px solid #bbb;
-  border-radius: 0 0 10px 10px;
-  width: 210px;
-  padding: 0 10px;
-}
-
-.menu > a:hover {
-  color: #fe775a;
-}
-
-main {
-  z-index: -10;
 }

@@ -1,6 +1,6 @@
 // COMPARSA MENU A TENDINA LINGUE
-engl = document.querySelector('#english');
-languageMenu = document.querySelector('#languageMenu');
+let engl = document.querySelector('#english');
+let languageMenu = document.querySelector('#languageMenu');
 
 engl.addEventListener('click', showMenuLanguage);
 
@@ -25,8 +25,8 @@ function exitLanguages() {
 }
 
 // COMPARSA MENU A TENDINA SOFTWARE
-soft = document.querySelector('#software');
-softwareMenu = document.querySelector('#softwareMenu');
+let soft = document.querySelector('#software');
+let softwareMenu = document.querySelector('#softwareMenu');
 
 soft.addEventListener('click', showMenusoftware);
 
@@ -44,8 +44,8 @@ function showMenusoftware() {
 }
 
 // COMPARSA MENU A TENDINA RESOURCES
-resources = document.querySelector('#resources');
-resourceseM = document.querySelector('#resourceseMenu');
+let resources = document.querySelector('#resources');
+let resourceseM = document.querySelector('#resourceseMenu');
 
 resources.addEventListener('click', showMenuResource);
 
@@ -64,8 +64,8 @@ function showMenuResource() {
 
 // COMPARSA MENU A TENDINA PARTENERS
 
-patener = document.querySelector('#partener');
-partnerM = document.querySelector('#partenerM');
+let patener = document.querySelector('#partener');
+let partnerM = document.querySelector('#partenerM');
 
 partener.addEventListener('click', showMenuPartener);
 
@@ -83,8 +83,8 @@ function showMenuPartener() {
 }
 // COMPARSA MENU A TENDINA ABOUT CON ARROW FUNCTION
 
-about = document.querySelector('#about');
-aboutM = document.querySelector('#aboutM');
+let about = document.querySelector('#about');
+let aboutM = document.querySelector('#aboutM');
 
 about.addEventListener('click', () => {
   // far chiudere tutti gli altri menu
@@ -96,5 +96,21 @@ about.addEventListener('click', () => {
     aboutM.style.display = 'block';
   } else {
     aboutM.style.display = 'none';
+  }
+});
+
+// COMPARSA E SCOMPARSA CHAT
+
+let chatIcon = document.querySelector('#chat');
+let chatWindow = document.querySelector('#chatWindow');
+
+console.log(chatIcon);
+console.log(chatWindow);
+
+chatIcon.addEventListener('click', () => {
+  if (chatWindow.style.display == 'none') {
+    chatWindow.style.display = 'block';
+  } else {
+    chatWindow.style.display = 'none';
   }
 });

@@ -458,7 +458,7 @@ footer .h20 li:last-child {
   display: none;
   position: fixed;
   bottom: 11.5%;
-  left: 71.5%;
+  left: 71.3%;
   height: 50vh;
   width: 22vw;
   background-color: #fff;
@@ -480,19 +480,13 @@ footer .h20 li:last-child {
 }
 
 #window > div:first-child {
-  height: 5vh;
   background-color: #198dcc;
   border: 3px solid #198dcc;
 }
 
 #window > div:nth-child(2) {
-  height: 25vh;
   padding: 0 0.5vw;
-}
-
-#window div:last-child {
-  height: 5vh;
-  background-color: lightgrey;
+  border-bottom: 1px solid #999;
 }
 
 /* interno barra account */
@@ -528,17 +522,31 @@ footer .h20 li:last-child {
 
 /* input utente */
 
-#window > input {
+#window input {
   position: absolute;
-  bottom: 1.5%;
+  bottom: 0%;
   outline: none;
   border: 0;
-  border-top: 1px solid #999;
   margin-top: 0vh;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 700;
   padding: 0 0.5vw;
+  border-radius: 0 0 0 5px;
+}
+
+/* tasto per inviare messaggio */
+
+#btnSend {
+  position: absolute;
+  right: 5%;
+  top: 47%;
+  transform: translate(0, -50%);
+  background-color: #198dcc;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7vw;
+  border-radius: 50%;
 }
 
 /* classe che da stile a messaggi inviati

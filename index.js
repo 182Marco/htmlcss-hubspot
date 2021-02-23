@@ -116,10 +116,12 @@ chatIcon.addEventListener('click', () => {
 
 let sentedMessage = document.querySelector('#sentedMessage');
 let inputMessage = document.querySelector('#inputMessage');
+let btnSend = document.querySelector('#btnSend');
 
 console.log(inputMessage.value);
 
 inputMessage.addEventListener('keypress', sentMessage);
+btnSend.addEventListener('click', sentMessageTwo);
 
 function sentMessage() {
   if (event.keyCode == 13) {
@@ -135,4 +137,18 @@ function sentMessage() {
     para.classList.add('styleMessage');
     inputMessage.value = '';
   }
+}
+
+function sentMessageTwo() {
+  if (
+    sentedMessage.innerText ==
+    `Per dubbi e perplessità puoi chattare con l'operatore!`
+  ) {
+    sentedMessage.innerText = ``;
+  }
+  var para = document.createElement('p');
+  para.innerText = inputMessage.value;
+  sentedMessage.appendChild(para);
+  para.classList.add('styleMessage');
+  inputMessage.value = '';
 }

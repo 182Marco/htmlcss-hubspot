@@ -5,6 +5,11 @@ languageMenu = document.querySelector('#languageMenu');
 engl.addEventListener('click', showMenuLanguage);
 
 function showMenuLanguage() {
+  // far chiudere tutti gli altri menu
+  aboutM.style.display = 'none';
+  partenerM.style.display = 'none';
+  resourceseM.style.display = 'none';
+  softwareMenu.style.display = 'none';
   if (languageMenu.style.display == 'none') {
     languageMenu.style.display = 'block';
   } else {
@@ -26,6 +31,11 @@ softwareMenu = document.querySelector('#softwareMenu');
 soft.addEventListener('click', showMenusoftware);
 
 function showMenusoftware() {
+  // far chiudere tutti gli altri menu
+  aboutM.style.display = 'none';
+  partenerM.style.display = 'none';
+  resourceseM.style.display = 'none';
+  languageMenu.style.display = 'none';
   if (softwareMenu.style.display == 'none') {
     softwareMenu.style.display = 'block';
   } else {
@@ -40,6 +50,11 @@ resourceseM = document.querySelector('#resourceseMenu');
 resources.addEventListener('click', showMenuResource);
 
 function showMenuResource() {
+  // far chiudere tutti gli altri menu
+  aboutM.style.display = 'none';
+  partenerM.style.display = 'none';
+  softwareMenu.style.display = 'none';
+  languageMenu.style.display = 'none';
   if (resourceseM.style.display == 'none') {
     resourceseM.style.display = 'block';
   } else {
@@ -55,6 +70,11 @@ partnerM = document.querySelector('#partenerM');
 partener.addEventListener('click', showMenuPartener);
 
 function showMenuPartener() {
+  // far chiudere tutti gli altri menu
+  aboutM.style.display = 'none';
+  resourceseM.style.display = 'none';
+  softwareMenu.style.display = 'none';
+  languageMenu.style.display = 'none';
   if (partenerM.style.display == 'none') {
     partenerM.style.display = 'block';
   } else {
@@ -67,6 +87,11 @@ about = document.querySelector('#about');
 aboutM = document.querySelector('#aboutM');
 
 about.addEventListener('click', () => {
+  // far chiudere tutti gli altri menu
+  partenerM.style.display = 'none';
+  resourceseM.style.display = 'none';
+  softwareMenu.style.display = 'none';
+  languageMenu.style.display = 'none';
   if (aboutM.style.display == 'none') {
     aboutM.style.display = 'block';
   } else {

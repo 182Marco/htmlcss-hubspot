@@ -102,15 +102,39 @@ about.addEventListener('click', () => {
 // COMPARSA E SCOMPARSA CHAT
 
 let chatIcon = document.querySelector('#chat');
-let chatWindow = document.querySelector('#chatWindow');
-
-console.log(chatIcon);
-console.log(chatWindow);
+let chat = document.querySelector('#window');
 
 chatIcon.addEventListener('click', () => {
-  if (chatWindow.style.display == 'none') {
-    chatWindow.style.display = 'block';
+  if (chat.style.display == 'none') {
+    chat.style.display = 'block';
   } else {
-    chatWindow.style.display = 'none';
+    chat.style.display = 'none';
+  }
+});
+
+// FAR SCRIVERE ALL'UTENTE DENTRO LA CHAT
+
+let sentedMessage = document.querySelector('#sentedMessage');
+let inputMessage = document.querySelector('#inputMessage');
+
+console.log(inputMessage.value);
+
+inputMessage.addEventListener('keypress', () => {
+  if (
+    event.keyCode == 13 &&
+    sentedMessage.innerText ==
+      `Per dubbi e perplessità puoi chattare con l'operatore!`
+  ) {
+    sentedMessage.innerText = inputMessage.value;
+    inputMessage.value = '';
+  } else if (
+    event.keyCode == 13 &&
+    sentedMessage.innerText !=
+      `Per dubbi e perplessità puoi chattare con l'operatore!`
+  ) {
+    sentedMessage.innerHTML =
+      sentedMessage.innerHTML + '<br/>' + '<br/>' + inputMessage.value;
+    inputMessage.value = '';
+  } else {
   }
 });

@@ -447,44 +447,57 @@ footer .h20 li:last-child {
 /* CHAT GIALLA FISSA IN BASSO A SX */
 
 #chat {
-  color: rgb(255, 206, 45);
+  color: rgb(255, 196, 0);
   position: fixed;
   bottom: 3%;
   left: 88%;
   font-size: 5vw;
 }
 
-#chatWindow {
+#window {
   display: none;
-  position: absolute;
-  bottom: 110%;
-  right: 0;
+  position: fixed;
+  bottom: 11.5%;
+  left: 71.5%;
   height: 50vh;
   width: 22vw;
   background-color: #fff;
   border: 3px solid #198dcc;
   border-radius: 10px;
+  animation-name: opacityProgressive;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
-#chatWindow div:first-child {
+@keyframes opacityProgressive {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#window > div:first-child {
   height: 5vh;
   background-color: #198dcc;
   border: 3px solid #198dcc;
 }
 
-#chatWindow > div:nth-child(2) {
+#window > div:nth-child(2) {
   height: 25vh;
   padding: 0 0.5vw;
 }
 
-#chatWindow div:last-child {
+#window div:last-child {
   height: 5vh;
   background-color: lightgrey;
 }
 
 /* interno barra account */
 
-#chatWindow > div > img {
+#window > div > img {
   position: absolute;
   top: 50%;
   left: 3%;
@@ -495,28 +508,27 @@ footer .h20 li:last-child {
   vertical-align: middle;
 }
 
-#chatWindow > div > span {
+#window > div > span {
   position: absolute;
   top: 50%;
   left: 20%;
   transform: translate(0, -50%);
   color: #fff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* scritta puoi chattare con operatore */
 
-#chatWindow > div > p {
-  padding-top: 0.5vh;
+#window > div > p {
+  padding-top: 1vh;
   font-size: 0.75rem;
   line-height: 1rem;
-  font-weight: 700;
 }
 
 /* input utente */
 
-#chatWindow > input {
+#window > input {
   position: absolute;
   bottom: 1.5%;
   outline: none;

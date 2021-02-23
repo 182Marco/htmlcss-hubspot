@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #33475b;
+}
+
+/* HEADER */
+
+header {
+  height: 18vh;
+}
+
+.top-color-wrapper {
+  border-bottom: 2px solid #32495b;
+}
+
+/*  navabar (sono relative
+per elementi al loro interno) */
+nav {
+  font-weight: 500;
+}
+
+/* elementi navbar alto sx */
+
+.top.bar .sx ul li:first-child {
+  padding-right: 2vw;
+  border-right: 1px solid #33475b;
+}
+
+.top.bar .sx ul li:last-child {
+  padding-left: 2vw;
+}
+
+.top.bar .sx ul li:first-child {
+  padding-right: 2vw;
+  border-right: 1px solid #33475b;
+}
+
+/* nav a dx  sia sopra che sotto*/
+header .dx ul {
+  right: 0;
+}
+
+/* spazio tra elementi navbar alto dx */
+
+.top.bar .dx ul li {
+  padding-left: 1.4vw;
+}
+/* colore lente ingrandimento */
+
+.top.bar .dx ul li:first-child i {
+  color: #3481d0;
+}
+
+/* spaziatura tra elementi nav basso a dx */
+
+.bottom.bar .dx ul li {
+  padding-left: 1.4vw;
+}
+
+/* MAIN */
+main {
+  background-color: #fff4ef;
+}
+
+main .img-cont {
+  background-image: url(img/jumbotron.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 86%;
+}
+
+/* spaziatura dall'alto textwrapper sul jambo */
+
+main .txt-wrapper .txt-max-w {
+  padding-top: 5%;
+}
+
+/* jumbotrone spaziatura tra i testi */
+main .txt-wrapper .txt-max-w p {
+  margin: 4vh 0;
+}
+
+/* barra sovrapposta img del jumbotorne */
+
+main > .bottom-spacer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 12.5%;
+  border: 3px solid #32495b;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* INIZIO LUNGA SEZIONE BACKGROUND
+AZZURRO CHE PARTE CON FOTO DEL CUBO
+(parte  stettamente del cubo 
+più sue scritte  sotto*/
+
+.s-cube > .cube-and-txt {
+  padding: 4% 0;
+}
+
+.s-cube .cube-and-txt h2 {
+  margin: 1.5vh 0;
+}
+
+/* rettangoli bianchi su sfonfo azzurro */
+
+.under-cube,
+section .cont-ret-verticali .f {
+  border: 3px solid #eef4f8;
+  border-radius: 5px;
+}
+
+/* linea in mezzo al rettangolo */
+
+h4 > span {
+  background-color: #44515f;
+  margin-left: 3vw;
+  height: 2px;
+}
+
+/* colonna sx rettangolo 
+orizontale sotto il cubo (bottone)  */
+
+.under-cube .colum.sx a {
+  margin: 2vh;
+}
+
+/* colonna dx rettangolo 
+orizontale sotto il cubo   */
+
+.under-cube .colum p {
+  margin: 2vh 0;
+}
+
+/* elmenti lista il linea sotto riga */
+
+.content-box ul {
+  margin-top: 3.5%;
+}
+
+section li a {
+  margin-right: 1.5vw;
+  cursor: default;
+}
+
+li i {
+  padding: 3px;
+  border-radius: 50%;
+}
+
+section li i {
+  font-size: 0.5rem;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: default;
+}
+
+/* 3 rettangoli verticali bianchi
+sotto quello orizzontale */
+
+section .cont-ret-verticali {
+  margin-top: 4%;
+  padding-bottom: 4%;
+}
+
+.cont-ret-verticali .f:nth-child(2) {
+  margin: 0 5%;
+}
+
+/* 3 rettangoli verticali interno  sopra linea*/
+
+.cont-ret-verticali .h60 {
+  border-bottom: 2px solid#44515f;
+}
+.cont-ret-verticali img {
+  padding-top: 10%;
+  height: 17vh;
+  width: auto;
+}
+
+.cont-ret-verticali h3 {
+  padding: 5% 0;
+}
+
+/* 3 rettangoli verticali interno  sotto linea*/
+
+.cont-ret-verticali h4 {
+  padding: 10% 0;
+}
+
+.cont-ret-verticali ul {
+  padding-bottom: 10%;
+}
+
+.cont-ret-verticali li {
+  margin: 1px 0;
+}
+
+/* SEZIONE VERDE ACQUA  */
+
+.table-sec {
+  background: linear-gradient(#00a7ba, #00b9a9);
+}
+
+.table-sec p {
+  margin: 5vh 0;
+}
+
+.table-sec .cell {
+  float: left;
+  border: 1px solid #fff;
+}
+.table-sec .cell:nth-child(1),
+.table-sec .cell:nth-child(2),
+.table-sec .cell:nth-child(3),
+.table-sec .cell:nth-child(4) {
+  border-top: 0;
+}
+
+.table-sec .cell:nth-child(5),
+.table-sec .cell:nth-child(6),
+.table-sec .cell:nth-child(7),
+.table-sec .cell:nth-child(8) {
+  border-bottom: 0;
+}
+
+.table-sec .cell:nth-child(1),
+.table-sec .cell:nth-child(5) {
+  border-left: 0;
+}
+
+.table-sec .cell:nth-child(4),
+.table-sec .cell:nth-child(8) {
+  border-right: 0;
+}
+
+/* contenuto singole celle */
+
+.cell img {
+  margin: 0;
+}
+
+.cell p {
+  margin: 0;
+}
+
+section h6 {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1vh 0;
+}
+
+/* INIZIO SEZ-PREFOOTER CON  8 LOGHI 
+IN ALTO A DX IN CAMPO BIANCO */
+
+.prefooter-sec > .h90 {
+  margin: 5% auto;
+}
+
+/* testo in alto sx */
+
+.prefooter-sec h5 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 12.5%;
+}
+.prefooter-sec .top-sx-box {
+  margin-left: 17%;
+}
+
+/* testo in basso sx */
+
+/* .prefooter-sec .lower-sx-box {
+  padding: 6% 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+} */
+
+.prefooter-sec .lower-sx-box p {
+  margin: 8.5% 0;
+}
+
+.prefooter-sec .lower-sx-box:last-child {
+  margin-bottom: 0;
+}
+
+/* 8 loghi */
+
+.prefooter-sec .w60 img {
+  width: 21%;
+  margin: 0 0 1vh 2.5%;
+  vertical-align: middle;
+}
+
+.prefooter-sec .w60 img:first-child,
+.prefooter-sec .w60 img:nth-child(2),
+.prefooter-sec .w60 img:nth-child(3),
+.prefooter-sec .w60 img:nth-child(4) {
+  margin-bottom: 3%;
+}
+
+/* immagine donna sotto */
+
+.prefooter-sec .w60 img:nth-child(9) {
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  height: 44vh;
+  width: auto;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #32495b;
+}
+
+footer .w25 {
+  padding: 3% 2% 0 2%;
+}
+
+footer h4 {
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+
+footer p,
+footer li,
+footer a,
+footer i {
+  color: #ddd;
+  font-size: 0.85rem;
+  margin-bottom: 3.5%;
+}
+
+/* bottone grigio */
+
+footer .w25 a {
+  display: inline-block;
+  color: #000;
+  padding: 3% 2%;
+  background-color: #ddd;
+  border-radius: 7px;
+  margin: 10% 0;
+  border: 5px solid transparent;
+}
+footer .w25 a:hover {
+  border: 5px solid #ddd;
+  background-color: #fff;
+}
+
+/* icone dei social */
+
+footer i {
+  vertical-align: middle;
+  margin-left: 9%;
+}
+footer i:first-of-type {
+  margin-left: 0;
+}
+
+/* lingue in basso */
+
+footer .h10 ul {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+footer .h10 ul li {
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: 2%;
+}
+footer .h10 ul li:first-child,
+footer .h10 ul li:first-child a {
+  margin-left: 0%;
+}
+
+/* linea sotto lingue */
+
+footer div.h20.w100 {
+  border-top: 2px solid #ddd;
+}
+
+/* ultimissimi contenitori
+di testi in basso a dx */
+
+footer .w50 ul,
+footer .w50 .txt-box {
+  position: absolute;
+  right: 0%;
+  top: 25%;
+}
+
+footer .w50 .txt-box {
+  left: 0%;
+}
+
+/* li privacy policy in basso a dx */
+
+footer .h20 li:last-child {
+  margin-left: 4%;
+}
+
+/* UTILITY */
+
+.clear-fix::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.f {
+  float: left;
+}
+
+.rel {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-y {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.center-x {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.inline {
+  display: inline-block;
+}
+
+/* UTILITY fotmattazione testi */
+
+.txt-align {
+  text-align: center;
+}
+
+.txt-dx {
+  text-align: right;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+section p {
+  line-height: 1.3rem;
+  margin: 1.3vh 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section li {
+  margin: 1.3vh 0;
+  font-size: 0.8rem;
+  list-style: none;
+}
+
+/* UTILITY colori */
+
+.white {
+  color: #fff;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.orange {
+  color: #fe775a;
+}
+
+.orange-bg {
+  background-color: #fe775a;
+  color: #fff;
+}
+.orangeb:hover {
+  background-color: #fe775a;
+  color: #fff;
+  border: 2px solid #fe775a;
+}
+
+.bluespacer {
+  background-color: #afebe4;
+}
+
+.greytxt {
+  color: #6c7484;
+}
+
+.blue-bg {
+  background-color: #f4f9fd;
+}
+.blue-dark-bg {
+  color: #32495b;
+}
+
+/* UTILITY bottoni*/
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7vw 0.35vw;
+  border: 2px solid #fe775a;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+.btn:hover {
+  color: #fe775a;
+  background-color: #fff;
+  border: 2px solid #fe775a;
+}
+.btn.big {
+  padding: 1vw 0.3vw;
+  min-width: 10vw;
+  border: 3px solid #fe775a;
+}
+
+.btn.big:hover {
+  color: #fe775a;
+  background-color: #fff;
+  border: 3px solid #fe775a;
+  font-weight: 700;
+}
+
+/* UTILITY larghezze */
+
+.wfull {
+  width: 100vw;
+}
+.cont {
+  width: 70%;
+}
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w24 {
+  width: 24%;
+}
+.w30 {
+  width: 30%;
+}
+.w33 {
+  width: calc(100% / 3);
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+.w75 {
+  width: 75%;
+}
+.w80 {
+  width: 80%;
+}
+.w90 {
+  width: 90%;
+}
+.w100 {
+  width: 100%;
+}
+
+/* UTILITY altezze pecentuali */
+
+.h10 {
+  height: 10%;
+}
+
+.h20 {
+  height: 20%;
+}
+.h25 {
+  height: 25%;
+}
+.h30 {
+  height: 30%;
+}
+.h33 {
+  height: calc(100% / 3);
+}
+.h40 {
+  height: 40%;
+}
+.h50 {
+  height: 50%;
+}
+.h60 {
+  height: 60%;
+}
+.h70 {
+  height: 70%;
+}
+.h75 {
+  height: 75%;
+}
+.h80 {
+  height: 80%;
+}
+.h90 {
+  height: 90%;
+}
+.h95 {
+  height: 95%;
+}
+.h100 {
+  height: 100%;
+}
+/* UTILITY altezze vh */
+
+.hfull {
+  height: 100vh;
+}
+
+.h2.5vh {
+  height: 2.5vh;
+}
+
+.h5vh {
+  height: 5vh;
+}
+.h10vh {
+  height: 10vh;
+}
+
+.h20vh {
+  height: 20vh;
+}
+.h25vh {
+  height: 25vh;
+}
+.h30vh {
+  height: 30vh;
+}
+.h33vh {
+  height: calc(100vh / 3);
+}
+.h40vh {
+  height: 40vh;
+}
+.h50vh {
+  height: 50vh;
+}
+.h60vh {
+  height: 60vh;
+}
+.h70vh {
+  height: 70vh;
+}
+.h75vh {
+  height: 75vh;
+}
+.h80vh {
+  height: 80vh;
+}
+.h90vh {
+  height: 90vh;
+}
+.h100vh {
+  height: 100vh;
+}
+
+/* UTILITY margin auto */
+
+.ma {
+  margin: auto;
+}
+
+/* pointer sui tag i */
+
+i {
+  cursor: pointer;
+}
+
+/* esclusione su mappamondopo in alto dx pagina */
+
+i[class='fas fa-globe-africa'] {
+  cursor: default;
+}
+
+/* EFFETTI DROP-DOWN */
+
+.click {
+  cursor: pointer;
+}
+
+.dropDown:hover,
+.dropDown:hover i {
+  color: #fe775a;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: 0 0 10px 10px;
+  width: 210px;
+  padding: 0 10px;
+}
+
+.menu > a:hover {
+  color: #fe775a;
+}
+
+main {
+  z-index: -10;
+}

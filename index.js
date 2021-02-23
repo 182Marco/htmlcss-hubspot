@@ -123,6 +123,7 @@ console.log(inputMessage.value);
 inputMessage.addEventListener('keypress', sentMessage);
 btnSend.addEventListener('click', sentMessageTwo);
 
+//  funz per azionare il messaggio con tasto invio
 function sentMessage() {
   if (event.keyCode == 13) {
     if (
@@ -138,7 +139,7 @@ function sentMessage() {
     inputMessage.value = '';
   }
 }
-
+// funz per azionare il messaggio con il click
 function sentMessageTwo() {
   if (
     sentedMessage.innerText ==

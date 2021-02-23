@@ -125,7 +125,7 @@ inputMessage.addEventListener('keypress', () => {
     sentedMessage.innerText ==
       `Per dubbi e perplessità puoi chattare con l'operatore!`
   ) {
-    sentedMessage.innerText = inputMessage.value;
+    sentedMessage.innerHTML = '<p>' + inputMessage.value + '</p>';
     inputMessage.value = '';
   } else if (
     event.keyCode == 13 &&
@@ -133,7 +133,7 @@ inputMessage.addEventListener('keypress', () => {
       `Per dubbi e perplessità puoi chattare con l'operatore!`
   ) {
     sentedMessage.innerHTML =
-      sentedMessage.innerHTML + '<br/>' + '<br/>' + inputMessage.value;
+      sentedMessage.innerHTML + '<p>' + inputMessage.value + '</p>';
     inputMessage.value = '';
   } else {
   }

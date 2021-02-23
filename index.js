@@ -125,15 +125,21 @@ inputMessage.addEventListener('keypress', () => {
     sentedMessage.innerText ==
       `Per dubbi e perplessità puoi chattare con l'operatore!`
   ) {
-    sentedMessage.innerHTML = '<p>' + inputMessage.value + '</p>';
+    sentedMessage.innerText = ``;
+    var para = document.createElement('p');
+    para.innerText = inputMessage.value;
+    sentedMessage.appendChild(para);
+    para.classList.add('styleMessage');
     inputMessage.value = '';
   } else if (
     event.keyCode == 13 &&
     sentedMessage.innerText !=
       `Per dubbi e perplessità puoi chattare con l'operatore!`
   ) {
-    sentedMessage.innerHTML =
-      sentedMessage.innerHTML + '<p>' + inputMessage.value + '</p>';
+    var para = document.createElement('p');
+    para.innerText = inputMessage.value;
+    sentedMessage.appendChild(para);
+    para.classList.add('styleMessage');
     inputMessage.value = '';
   } else {
   }

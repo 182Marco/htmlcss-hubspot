@@ -1,4 +1,4 @@
-// COMPARSA MENU A TENDINA LINGUE
+// COMPARSA MENU A TENDINA LINGUE SCOMPARSA SITO
 let engl = document.querySelector('#english');
 let language = document.querySelector('#language');
 let siteContent = document.querySelector('#site-content');
@@ -9,6 +9,23 @@ function showMenuLanguage() {
   language.style.display = 'block';
   siteContent.setAttribute('id', 'siteContentAnimation');
   language.setAttribute('id', 'languageMenu');
+}
+
+// SCOMPARSA MENU A TENDINA LINGUE RICOMPARSA SITO
+
+var lang = document.getElementsByClassName('language');
+
+console.log(lang);
+
+var i;
+
+for (i = 0; i < lang.length; i++) {
+  lang[i].addEventListener('click', showSiteContent);
+}
+
+function showSiteContent() {
+  siteContent.setAttribute('id', 'siteContentAnimationGoBack');
+  language.setAttribute('id', 'languageMenuGoAway');
 }
 
 // COMPARSA MENU A TENDINA SOFTWARE

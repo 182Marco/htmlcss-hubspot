@@ -114,42 +114,49 @@ chatIcon.addEventListener('click', () => {
 
 // FAR SCRIVERE ALL'UTENTE DENTRO LA CHAT
 
-let sentedMessage = document.querySelector('#sentedMessage');
+let sendedMessage = document.querySelector('#sendedMessage');
 let inputMessage = document.querySelector('#inputMessage');
 let btnSend = document.querySelector('#btnSend');
-
-console.log(inputMessage.value);
 
 inputMessage.addEventListener('keypress', sentMessage);
 btnSend.addEventListener('click', sentMessageTwo);
 
-//  funz per azionare il messaggio con tasto invio
 function sentMessage() {
   if (event.keyCode == 13) {
     if (
-      sentedMessage.innerText ==
+      sendedMessage.innerText ==
       `Per dubbi e perplessità puoi chattare con l'operatore!`
     ) {
-      sentedMessage.innerText = ``;
+      sendedMessage.innerText = ``;
     }
     var para = document.createElement('p');
-    para.innerText = inputMessage.value;
-    sentedMessage.appendChild(para);
-    para.classList.add('styleMessage');
-    inputMessage.value = '';
+    sendedMessage.appendChild(para);
+    if (inputMessage.value != '') {
+      para.innerText = inputMessage.value;
+      para.classList.add('styleMessage');
+      inputMessage.value = '';
+    } else if (document.querySelector('#alt') != null) {
+      console.log(document.querySelector('#alt'));
+      document.querySelector('#alt').removeAttribute('id', 'alt');
+      document.getElementsByClassName('alt')[0].setAttribute('id', 'alt');
+    } else {
+      para.innerText = 'Scrivi un messaggio prima di premere invio';
+      para.classList.add('alt');
+      para.setAttribute('id', 'alt');
+    }
   }
 }
-// funz per azionare il messaggio con il click
+
 function sentMessageTwo() {
   if (
-    sentedMessage.innerText ==
+    sendedMessage.innerText ==
     `Per dubbi e perplessità puoi chattare con l'operatore!`
   ) {
-    sentedMessage.innerText = ``;
+    sendedMessage.innerText = ``;
   }
   var para = document.createElement('p');
   para.innerText = inputMessage.value;
-  sentedMessage.appendChild(para);
+  sendedMessage.appendChild(para);
   para.classList.add('styleMessage');
   inputMessage.value = '';
 }

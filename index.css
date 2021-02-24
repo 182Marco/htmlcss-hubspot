@@ -447,23 +447,31 @@ footer .h20 li:last-child {
 /* CHAT GIALLA FISSA IN BASSO A SX */
 
 #chat {
-  color: rgb(255, 196, 0);
+  color: #198dcc;
+  background-color: #fff;
+  border: 6px solid #198dcc;
+  padding: 1vw;
+  border-radius: 50%;
   position: fixed;
   bottom: 3%;
   left: 88%;
-  font-size: 5vw;
+  font-size: 3vw;
+}
+#chat:hover {
+  color: #fff;
+  background-color: #198dcc;
 }
 
 #window {
   display: none;
   position: fixed;
-  bottom: 11.5%;
-  left: 71.3%;
+  bottom: 15%;
+  left: 73%;
   height: 50vh;
   width: 22vw;
   background-color: #fff;
-  border: 3px solid #198dcc;
-  border-radius: 10px;
+  border: 6px solid #198dcc;
+  border-radius: 50px;
   animation-name: opacityProgressive;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -482,6 +490,7 @@ footer .h20 li:last-child {
 #window > div:first-child {
   background-color: #198dcc;
   border: 3px solid #198dcc;
+  border-radius: 30px 30px 0 0;
 }
 
 #window > div:nth-child(2) {
@@ -494,10 +503,10 @@ footer .h20 li:last-child {
 #window > div > img {
   position: absolute;
   top: 50%;
-  left: 3%;
+  left: 6%;
   transform: translate(0%, -50%);
-  height: 2.6vw;
-  width: 2.6vw;
+  height: 2.3vw;
+  width: 2.3vw;
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -531,25 +540,32 @@ footer .h20 li:last-child {
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 700;
-  padding: 0 0.5vw;
-  border-radius: 0 0 0 5px;
+  padding: 0 2vw;
+  border-radius: 0 0 50px 50px;
 }
 
 /* tasto per inviare messaggio */
 
 #btnSend {
   position: absolute;
-  right: 5%;
-  top: 47%;
+  right: 10%;
+  top: 48%;
   transform: translate(0, -50%);
+  color: #198dcc;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.3vw;
+  border-radius: 50%;
+  border: 3px solid #198dcc;
+}
+#btnSend:hover {
   background-color: #198dcc;
   color: #fff;
-  font-size: 1.1rem;
-  padding: 0.7vw;
-  border-radius: 50%;
 }
 
 /* classe che da stile a messaggi inviati
+e stile alt se si preme invio senza scivere nulla
 (non esite in HTML è creata da JS) */
 
 .styleMessage {
@@ -558,6 +574,37 @@ footer .h20 li:last-child {
   border-radius: 10px;
   margin-bottom: 1.25vh;
   line-height: 1rem;
+  color: #333;
+}
+/* se non si scrive nulla nel messaggio
+ma si preme ivio */
+
+.alt {
+  color: red;
+  line-height: 0.9rem;
+}
+#alt {
+  animation: tremble;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* UTILITY */

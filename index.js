@@ -135,10 +135,14 @@ function sentMessage() {
       para.innerText = inputMessage.value;
       para.classList.add('styleMessage');
       inputMessage.value = '';
+      if (document.querySelector('#alt') != null) {
+        document.querySelector('#alt').remove();
+      }
     } else if (document.querySelector('#alt') != null) {
-      console.log(document.querySelector('#alt'));
-      document.querySelector('#alt').removeAttribute('id', 'alt');
-      document.getElementsByClassName('alt')[0].setAttribute('id', 'alt');
+      document.querySelector('#alt').remove();
+      para.innerText = 'Scrivi un messaggio prima di premere invio';
+      para.classList.add('alt');
+      para.setAttribute('id', 'alt');
     } else {
       para.innerText = 'Scrivi un messaggio prima di premere invio';
       para.classList.add('alt');
@@ -155,8 +159,22 @@ function sentMessageTwo() {
     sendedMessage.innerText = ``;
   }
   var para = document.createElement('p');
-  para.innerText = inputMessage.value;
   sendedMessage.appendChild(para);
-  para.classList.add('styleMessage');
-  inputMessage.value = '';
+  if (inputMessage.value != '') {
+    para.innerText = inputMessage.value;
+    para.classList.add('styleMessage');
+    inputMessage.value = '';
+    if (document.querySelector('#alt') != null) {
+      document.querySelector('#alt').remove();
+    }
+  } else if (document.querySelector('#alt') != null) {
+    document.querySelector('#alt').remove();
+    para.innerText = 'Scrivi un messaggio prima di premere invio';
+    para.classList.add('alt');
+    para.setAttribute('id', 'alt');
+  } else {
+    para.innerText = 'Scrivi un messaggio prima di premere invio';
+    para.classList.add('alt');
+    para.setAttribute('id', 'alt');
+  }
 }

@@ -2,9 +2,6 @@
 let engl = document.querySelector('#english');
 let language = document.querySelector('#language');
 let siteContent = document.querySelector('#site-content');
-let body = document.getElementsByTagName('body')[0];
-
-console.log(body);
 
 engl.addEventListener('click', showMenuLanguage);
 

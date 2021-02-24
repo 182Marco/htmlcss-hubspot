@@ -2,6 +2,9 @@
 let engl = document.querySelector('#english');
 let language = document.querySelector('#language');
 let siteContent = document.querySelector('#site-content');
+let body = document.getElementsByTagName('body')[0];
+
+console.log(body);
 
 engl.addEventListener('click', showMenuLanguage);
 
@@ -9,13 +12,16 @@ function showMenuLanguage() {
   language.style.display = 'block';
   siteContent.setAttribute('id', 'siteContentAnimation');
   language.setAttribute('id', 'languageMenu');
+  // disabilitare scroll
+  window.addEventListener('scroll', noScroll);
+}
+function noScroll() {
+  window.scrollTo(0, 0);
 }
 
 // SCOMPARSA MENU A TENDINA LINGUE RICOMPARSA SITO
 
 var lang = document.getElementsByClassName('language');
-
-console.log(lang);
 
 var i;
 
@@ -24,6 +30,8 @@ for (i = 0; i < lang.length; i++) {
 }
 
 function showSiteContent() {
+  // riabilitare scroll
+  window.removeEventListener('scroll', noScroll);
   siteContent.setAttribute('id', 'siteContentAnimationGoBack');
   language.setAttribute('id', 'languageMenuGoAway');
 }

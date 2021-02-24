@@ -1,13 +1,14 @@
 // COMPARSA MENU A TENDINA LINGUE
 let engl = document.querySelector('#english');
-let languageMenu = document.querySelector('#languageMenu');
+let language = document.querySelector('#language');
 let siteContent = document.querySelector('#site-content');
 
 engl.addEventListener('click', showMenuLanguage);
 
 function showMenuLanguage() {
-  siteContent.style.display = 'none';
-  languageMenu.style.display = 'block';
+  language.style.display = 'block';
+  siteContent.setAttribute('id', 'siteContentAnimation');
+  language.setAttribute('id', 'languageMenu');
 }
 
 // COMPARSA MENU A TENDINA SOFTWARE

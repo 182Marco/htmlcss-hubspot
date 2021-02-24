@@ -6,6 +6,11 @@ let siteContent = document.querySelector('#site-content');
 engl.addEventListener('click', showMenuLanguage);
 
 function showMenuLanguage() {
+  // far chiudere tutti gli altri menu
+  aboutM.style.display = 'none';
+  partenerM.style.display = 'none';
+  resourceseM.style.display = 'none';
+  softwareMenu.style.display = 'none';
   language.style.display = 'block';
   siteContent.setAttribute('id', 'siteContentAnimation');
   language.setAttribute('id', 'languageMenu');
@@ -44,7 +49,6 @@ function showMenusoftware() {
   aboutM.style.display = 'none';
   partenerM.style.display = 'none';
   resourceseM.style.display = 'none';
-  languageMenu.style.display = 'none';
   if (softwareMenu.style.display == 'none') {
     softwareMenu.style.display = 'block';
   } else {
@@ -63,7 +67,6 @@ function showMenuResource() {
   aboutM.style.display = 'none';
   partenerM.style.display = 'none';
   softwareMenu.style.display = 'none';
-  languageMenu.style.display = 'none';
   if (resourceseM.style.display == 'none') {
     resourceseM.style.display = 'block';
   } else {
@@ -83,7 +86,6 @@ function showMenuPartener() {
   aboutM.style.display = 'none';
   resourceseM.style.display = 'none';
   softwareMenu.style.display = 'none';
-  languageMenu.style.display = 'none';
   if (partenerM.style.display == 'none') {
     partenerM.style.display = 'block';
   } else {
@@ -100,7 +102,6 @@ about.addEventListener('click', () => {
   partenerM.style.display = 'none';
   resourceseM.style.display = 'none';
   softwareMenu.style.display = 'none';
-  languageMenu.style.display = 'none';
   if (aboutM.style.display == 'none') {
     aboutM.style.display = 'block';
   } else {

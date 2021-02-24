@@ -1,27 +1,13 @@
 // COMPARSA MENU A TENDINA LINGUE
 let engl = document.querySelector('#english');
 let languageMenu = document.querySelector('#languageMenu');
+let siteContent = document.querySelector('#site-content');
 
 engl.addEventListener('click', showMenuLanguage);
 
 function showMenuLanguage() {
-  // far chiudere tutti gli altri menu
-  aboutM.style.display = 'none';
-  partenerM.style.display = 'none';
-  resourceseM.style.display = 'none';
-  softwareMenu.style.display = 'none';
-  if (languageMenu.style.display == 'none') {
-    languageMenu.style.display = 'block';
-  } else {
-    languageMenu.style.display = 'none';
-  }
-}
-
-// uscita se si esce dal menu con il mouse
-languageMenu.addEventListener('mouseleave', exitLanguages);
-
-function exitLanguages() {
-  languageMenu.style.display = 'none';
+  siteContent.style.display = 'none';
+  languageMenu.style.display = 'block';
 }
 
 // COMPARSA MENU A TENDINA SOFTWARE

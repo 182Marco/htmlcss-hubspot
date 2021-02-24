@@ -472,28 +472,27 @@ footer .h20 li:last-child {
   background-color: #fff;
   border: 6px solid #198dcc;
   border-radius: 50px;
-  animation-name: opacityProgressive;
-  animation-duration: 1s;
+  animation-name: changeh;
+  animation-duration: 0.6s;
   animation-iteration-count: 1;
+  overflow: hidden;
 }
 
-@keyframes opacityProgressive {
+@keyframes changeh {
   0% {
-    opacity: 0;
+    height: 0vh;
   }
-
   100% {
-    opacity: 1;
+    height: 50vh;
   }
 }
 
 #window > div:first-child {
   background-color: #198dcc;
-  border: 3px solid #198dcc;
-  border-radius: 30px 30px 0 0;
 }
 
 #window > div:nth-child(2) {
+  overflow: scroll;
   padding: 0 0.5vw;
   border-bottom: 1px solid #999;
 }
@@ -534,13 +533,14 @@ footer .h20 li:last-child {
 #window input {
   position: absolute;
   bottom: 0%;
+  left: 10%;
   outline: none;
   border: 0;
   margin-top: 0vh;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 700;
-  padding: 0 2vw;
+  padding: 0 1vw;
   border-radius: 0 0 50px 50px;
 }
 
@@ -607,6 +607,72 @@ ma si preme ivio */
   }
 }
 
+/* MENU LINGUE */
+
+/* #siteContentAnimation {
+  animation-name: opacityDown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
+#languageMenu {
+  font-weight: 700;
+  font-size: 6vw;
+  display: none;
+  animation-name: opacityUp;
+  animation-duration: 1.5s;
+}
+
+@keyframes opacityUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#languageMenu li {
+  list-style-type: none;
+  margin: 2vh 0;
+}
+#languageMenu li:last-child {
+  margin-left: 8vw;
+}
+#languageMenu img {
+  height: 7vh;
+  vertical-align: middle;
+}
+
+#languageMenu a {
+  transition: color 0.6s;
+  font-style: italic;
+  border-radius: 20px;
+}
+#languageMenu a span {
+  transition: color 0.3s;
+  font-style: italic;
+}
+#languageMenu a:hover {
+  color: #fe775a;
+}
+#languageMenu a:hover span {
+  color: #fe775a;
+}
+#languageMenu > a > span:hover {
+  color: #fe775a;
+}
+#languageMenu > a > span:hover #languageMenu > a {
+  color: #fe775a;
+}
 /* UTILITY */
 
 .clear-fix::after {
@@ -921,3 +987,7 @@ section li {
 i {
   cursor: pointer;
 }
+/* 
+#site-content {
+  display: none;
+} */

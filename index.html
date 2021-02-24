@@ -12,521 +12,552 @@
   </head>
 
   <body>
-    <header class="wfull">
-      <div class="top-color-wrapper wfull h50 blue-bg">
-        <div class="top bar cont h100 ma clear-fix">
-          <!-- nav alto a sx -->
-          <nav class="sx w50 h100 f rel">
+    <div id="site-content">
+      <header class="wfull">
+        <div class="top-color-wrapper wfull h50 blue-bg">
+          <div class="top bar cont h100 ma clear-fix">
+            <!-- nav alto a sx -->
+            <nav class="sx w50 h100 f rel">
+              <ul class="center-y">
+                <li class="dropDown inline rel click" id="english">
+                  <i class="fas fa-globe-africa"></i> English
+                  <i class="dropDown fas fa-chevron-down"></i>
+                </li>
+                <li class="inline"><a href="#">Contact Us</a></li>
+              </ul>
+              <!-- nav alto a dx -->
+            </nav>
+            <nav class="dx w50 h100 f rel">
+              <ul class="center-y">
+                <li class="inline"><i class="fas fa-search"></i></li>
+                <li class="inline">
+                  <a class="btn orange" href="#">Log in</a>
+                </li>
+                <li class="inline">
+                  <a class="btn orange-bg" href="#">GetHubSpotFree</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- contenitore logo in alto sx -->
+        <div class="bottom bar cont h50 ma clear-fix">
+          <img class="w10 h100 f" src="img/logo.svg" alt="logo hubspot" />
+          <!-- navbar sotto a dx -->
+          <nav class="dx w90 h100 f rel">
             <ul class="center-y">
-              <li class="dropDown inline rel click" id="english">
-                <i class="fas fa-globe-africa"></i> English
-                <i class="dropDown fas fa-chevron-down"></i>
-                <!-- menu a tendina delle lingue -->
-                <div class="menu" id="languageMenu">
-                  <a>Deutsche</a> <br />
-                  <a>Français</a> <br />
-                  <a>Español</a> <br />
-                  <a>Português</a><br />
-                  <a>中国人</a>
+              <li class="dropDown inline click" id="software">
+                Sotware <i class="dropDown fas fa-chevron-down"></i>
+                <!-- menu a tendina dei software -->
+                <div class="menu" id="softwareMenu">
+                  <a>Active Campaign</a><br />
+                  <a>Mail Chimp</a><br />
+                  <a>Google Analitics</a><br />
+                  <a>DaVinci Resolve</a><br />
+                  <a>GIMP</a><br />
                 </div>
               </li>
-              <li class="inline"><a href="#">Contact Us</a></li>
-            </ul>
-            <!-- nav alto a dx -->
-          </nav>
-          <nav class="dx w50 h100 f rel">
-            <ul class="center-y">
-              <li class="inline"><i class="fas fa-search"></i></li>
-              <li class="inline">
-                <a class="btn orange" href="#">Log in</a>
+              <li class="dropDown inline">
+                <a href="#">Pricing</a>
               </li>
-              <li class="inline">
-                <a class="btn orange-bg" href="#">GetHubSpotFree</a>
+              <li class="dropDown inline rel click" id="resources">
+                Resources
+                <i class="dropDown fas fa-chevron-down"></i>
+                <!-- menu a tendina Resources -->
+                <div class="menu" id="resourceseMenu">
+                  <a>Human Resources</a> <br />
+                  <a>Social Media Manager</a> <br />
+                  <a>Seo Specialist</a> <br />
+                  <a>Marketing Specialist</a> <br />
+                  <a>Copywriters</a> <br />
+                </div>
+              </li>
+              <li class="dropDown inline rel click" id="partener">
+                Parteners
+                <i class="dropDown fas fa-chevron-down"></i>
+                <!-- menu a tendina dei partener-->
+                <div class="menu" id="partenerM">
+                  <a>Officina zio Ugo</a><br />
+                  <a>Pizza da Mario</a><br />
+                  <a>Ascanio Assicurazioni</a><br />
+                </div>
+              </li>
+              <li class="dropDown inline rel click" id="about">
+                About <i class="dropDown fas fa-chevron-down"></i>
+                <!-- menu a tendina dei partener-->
+                <div class="menu" id="aboutM">
+                  <a>Il nostro metodo</a><br />
+                  <a>Chi siamo</a><br />
+                  <a>La nostra storia</a><br />
+                </div>
               </li>
             </ul>
           </nav>
         </div>
-      </div>
-      <!-- contenitore logo in alto sx -->
-      <div class="bottom bar cont h50 ma clear-fix">
-        <img class="w10 h100 f" src="img/logo.svg" alt="logo hubspot" />
-        <!-- navbar sotto a dx -->
-        <nav class="dx w90 h100 f rel">
-          <ul class="center-y">
-            <li class="dropDown inline click" id="software">
-              Sotware <i class="dropDown fas fa-chevron-down"></i>
-              <!-- menu a tendina dei software -->
-              <div class="menu" id="softwareMenu">
-                <a>Active Campaign</a><br />
-                <a>Mail Chimp</a><br />
-                <a>Google Analitics</a><br />
-                <a>DaVinci Resolve</a><br />
-                <a>GIMP</a><br />
-              </div>
-            </li>
-            <li class="dropDown inline">
-              <a href="#">Pricing</a>
-            </li>
-            <li class="dropDown inline rel click" id="resources">
-              Resources
-              <i class="dropDown fas fa-chevron-down"></i>
-              <!-- menu a tendina Resources -->
-              <div class="menu" id="resourceseMenu">
-                <a>Human Resources</a> <br />
-                <a>Social Media Manager</a> <br />
-                <a>Seo Specialist</a> <br />
-                <a>Marketing Specialist</a> <br />
-                <a>Copywriters</a> <br />
-              </div>
-            </li>
-            <li class="dropDown inline rel click" id="partener">
-              Parteners
-              <i class="dropDown fas fa-chevron-down"></i>
-              <!-- menu a tendina dei partener-->
-              <div class="menu" id="partenerM">
-                <a>Officina zio Ugo</a><br />
-                <a>Pizza da Mario</a><br />
-                <a>Ascanio Assicurazioni</a><br />
-              </div>
-            </li>
-            <li class="dropDown inline rel click" id="about">
-              About <i class="dropDown fas fa-chevron-down"></i>
-              <!-- menu a tendina dei partener-->
-              <div class="menu" id="aboutM">
-                <a>Il nostro metodo</a><br />
-                <a>Chi siamo</a><br />
-                <a>La nostra storia</a><br />
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- JUMBORTRONE -->
-    <main class="wfull h80vh rel">
-      <div class="img-cont h100">
-        <div class="txt-wrapper cont ma">
-          <div class="txt-max-w w50">
-            <h1>There's a better way to grow.</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus nulla harum a. A non incidunt, quod dolores commodi
-              illo.
-            </p>
-            <a class="btn big orange-bg" href="#">GetHubSpotFree</a>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
+      </header>
+      <!-- JUMBORTRONE -->
+      <main class="wfull h80vh rel">
+        <div class="img-cont h100">
+          <div class="txt-wrapper cont ma">
+            <div class="txt-max-w w50">
+              <h1>There's a better way to grow.</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus nulla harum a. A non incidunt, quod dolores commodi
+                illo.
+              </p>
+              <a class="btn big orange-bg" href="#">GetHubSpotFree</a>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bottom-spacer bluespacer w100"></div>
-    </main>
-    <!-- INIZIO LUNGA SEZIONE BACKGROUND AZZURRO CHIARO -->
-    <!-- cubo e suoi testi -->
-    <section class="s-cube fullw blue-bg">
-      <div class="cube-and-txt w50 ma txt-align">
-        <img class="w33" src="img/Integrations_Illustration.webp" alt="cubo" />
-        <h2>Powerful Alone. Better together</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          omnis, hic reprehenderit repudiandae molestias est animi sit doloribus
-          quis, quibusdam sapiente!
-        </p>
-      </div>
-      <!-- rettangolo in orizzontale 
+        <div class="bottom-spacer bluespacer w100"></div>
+      </main>
+      <!-- INIZIO LUNGA SEZIONE BACKGROUND AZZURRO CHIARO -->
+      <!-- cubo e suoi testi -->
+      <section class="s-cube fullw blue-bg">
+        <div class="cube-and-txt w50 ma txt-align">
+          <img
+            class="w33"
+            src="img/Integrations_Illustration.webp"
+            alt="cubo"
+          />
+          <h2>Powerful Alone. Better together</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            omnis, hic reprehenderit repudiandae molestias est animi sit
+            doloribus quis, quibusdam sapiente!
+          </p>
+        </div>
+        <!-- rettangolo in orizzontale 
         bianco sotto il cubo -->
-      <div class="under-cube cont h40vh ma white-bg clear-fix">
-        <!-- ret oriz. colonna sx -->
-        <div class="colum sx w30 h100 f rel">
-          <div class="content-box center w50">
-            <img class="w90" src="img/CRM-Illustration.svg" alt="libro" />
-            <a class="btn big orange-bg" href="#">Learn More</a>
+        <div class="under-cube cont h40vh ma white-bg clear-fix">
+          <!-- ret oriz. colonna sx -->
+          <div class="colum sx w30 h100 f rel">
+            <div class="content-box center w50">
+              <img class="w90" src="img/CRM-Illustration.svg" alt="libro" />
+              <a class="btn big orange-bg" href="#">Learn More</a>
+            </div>
+          </div>
+          <!-- rer oriz. colonna dx -->
+          <div class="colum dx w70 h100 f rel">
+            <div class="content-box center-y w90 h50">
+              <h3>Free Hubspot CRM</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis quo explicabo. Mollitia, facilis officia Lorem, ipsum
+                dolor.!
+              </p>
+              <h4 class="rel">
+                <!-- linea in mezzo rettangolo orizzontale -->
+                POPULAR FEATURE <span class="center-y inline w60 h2"></span>
+              </h4>
+              <ul>
+                <li class="inline rel">
+                  <i class="fas fa-check white orange-bg"></i>
+                  <a href="#">Contact Insight</a>
+                </li>
+                <li class="inline rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Deals</a>
+                </li>
+                <li class="inline rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Task</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- rer oriz. colonna dx -->
-        <div class="colum dx w70 h100 f rel">
-          <div class="content-box center-y w90 h50">
-            <h3>Free Hubspot CRM</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-              quo explicabo. Mollitia, facilis officia Lorem, ipsum dolor.!
-            </p>
-            <h4 class="rel">
-              <!-- linea in mezzo rettangolo orizzontale -->
-              POPULAR FEATURE <span class="center-y inline w60 h2"></span>
-            </h4>
-            <ul>
-              <li class="inline rel">
-                <i class="fas fa-check white orange-bg"></i>
-                <a href="#">Contact Insight</a>
-              </li>
-              <li class="inline rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Deals</a>
-              </li>
-              <li class="inline rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Task</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- 3 RETTANGOLI VERTICALI BIANCHI
+        <!-- 3 RETTANGOLI VERTICALI BIANCHI
       IN VERTICALE -->
-      <div class="cont-ret-verticali cont h80vh ma clear-fix">
-        <div class="w30 h100 f white-bg">
-          <!-- rettangolo verticale a sx 
+        <div class="cont-ret-verticali cont h80vh ma clear-fix">
+          <div class="w30 h100 f white-bg">
+            <!-- rettangolo verticale a sx 
             parte superiore-->
-          <div class="w80 h60 ma txt-align">
-            <img
-              class="w40"
-              src="img/Marketing-Hub-Free.svg"
-              alt="vassoio di idee"
-            />
-            <h3>Marketing Hub</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-              dignissimos quis non tenetur repellat excepturi!
-            </p>
-          </div>
-          <div class="w80 h40 ma">
-            <!-- sempre ret sx parte inferiore-->
-            <div class="txt-align">
-              <h4 class="rel">POPULAR FEATURE</h4>
+            <div class="w80 h60 ma txt-align">
+              <img
+                class="w40"
+                src="img/Marketing-Hub-Free.svg"
+                alt="vassoio di idee"
+              />
+              <h3>Marketing Hub</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                dignissimos quis non tenetur repellat excepturi!
+              </p>
             </div>
-            <ul>
-              <li class="rel">
-                <i class="fas fa-check white orange-bg"></i>
-                <a href="#">Contact Insight</a>
-              </li>
-              <li class="rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Deals</a>
-              </li>
-              <li class="rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Task</a>
-              </li>
-            </ul>
-            <div class="txt-align">
-              <a class="btn big orange-bg" href="#">Learn More</a>
+            <div class="w80 h40 ma">
+              <!-- sempre ret sx parte inferiore-->
+              <div class="txt-align">
+                <h4 class="rel">POPULAR FEATURE</h4>
+              </div>
+              <ul>
+                <li class="rel">
+                  <i class="fas fa-check white orange-bg"></i>
+                  <a href="#">Contact Insight</a>
+                </li>
+                <li class="rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Deals</a>
+                </li>
+                <li class="rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Task</a>
+                </li>
+              </ul>
+              <div class="txt-align">
+                <a class="btn big orange-bg" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- rettangolo verticale al centro -->
+          <div class="w30 h100 f white-bg">
+            <div class="w80 h60 ma txt-align">
+              <img
+                class="w40"
+                src="img/Sales-Professional-Illustration.svg"
+                alt="borsa e cancelleria"
+              />
+              <h3>Sales Hub</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                dignissimos quis non tenetur repellat excepturi!
+              </p>
+            </div>
+            <div class="w80 h40 ma">
+              <!-- sempre ret centro parte inferiore-->
+              <div class="txt-align">
+                <h4 class="rel">POPULAR FEATURE</h4>
+              </div>
+              <ul>
+                <li class="rel">
+                  <i class="fas fa-check white orange-bg"></i>
+                  <a href="#">Contact Insight</a>
+                </li>
+                <li class="rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Deals</a>
+                </li>
+                <li class="rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Task</a>
+                </li>
+              </ul>
+              <div class="txt-align">
+                <a class="btn big orange-bg" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- rettangolo verticale a dx -->
+          <div class="w30 h100 f white-bg">
+            <div class="w80 h60 ma txt-align">
+              <img
+                class="w40"
+                src="img/Service-Hub-Illustration.svg"
+                alt="tavolo e cuffie musica"
+              />
+              <h3>Sales Hub</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+                dignissimos quis non tenetur repellat excepturi!
+              </p>
+            </div>
+            <div class="w80 h40 ma">
+              <!-- sempre ret dx parte inferiore-->
+              <div class="txt-align">
+                <h4 class="rel">POPULAR FEATURE</h4>
+              </div>
+              <ul>
+                <li class="rel">
+                  <i class="fas fa-check white orange-bg"></i>
+                  <a href="#">Contact Insight</a>
+                </li>
+                <li class="rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Deals</a>
+                </li>
+                <li class="rel">
+                  <i class="fas fa-check orange-bg"></i>
+                  <a href="#">Task</a>
+                </li>
+              </ul>
+              <div class="txt-align">
+                <a class="btn big orange-bg" href="#">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
-        <!-- rettangolo verticale al centro -->
-        <div class="w30 h100 f white-bg">
-          <div class="w80 h60 ma txt-align">
-            <img
-              class="w40"
-              src="img/Sales-Professional-Illustration.svg"
-              alt="borsa e cancelleria"
-            />
-            <h3>Sales Hub</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-              dignissimos quis non tenetur repellat excepturi!
-            </p>
-          </div>
-          <div class="w80 h40 ma">
-            <!-- sempre ret centro parte inferiore-->
-            <div class="txt-align">
-              <h4 class="rel">POPULAR FEATURE</h4>
+      </section>
+      <!-- SEZIONE VERDE ACQUA CON TABELLA -->
+      <section class="table-sec h75vh txt-align rel">
+        <div class="center cont">
+          <h2 class="white">
+            Learn and grow with award-winnning support and a thriving community
+            behind you
+          </h2>
+          <p class="white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            iste rerum quisquam alias consequuntur pariatur necessitatibus earum
+            eum consequuntur!
+          </p>
+          <!-- inizio celle vere e proprie -->
+          <div class="h40vh clear-fix">
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_agency.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">150+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-            <ul>
-              <li class="rel">
-                <i class="fas fa-check white orange-bg"></i>
-                <a href="#">Contact Insight</a>
-              </li>
-              <li class="rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Deals</a>
-              </li>
-              <li class="rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Task</a>
-              </li>
-            </ul>
-            <div class="txt-align">
-              <a class="btn big orange-bg" href="#">Learn More</a>
+            <!-- cella 2 -->
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_blog.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">4.5M</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- rettangolo verticale a dx -->
-        <div class="w30 h100 f white-bg">
-          <div class="w80 h60 ma txt-align">
-            <img
-              class="w40"
-              src="img/Service-Hub-Illustration.svg"
-              alt="tavolo e cuffie musica"
-            />
-            <h3>Sales Hub</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-              dignissimos quis non tenetur repellat excepturi!
-            </p>
-          </div>
-          <div class="w80 h40 ma">
-            <!-- sempre ret dx parte inferiore-->
-            <div class="txt-align">
-              <h4 class="rel">POPULAR FEATURE</h4>
+            <!-- cella 3 -->
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_academy.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">155K+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-            <ul>
-              <li class="rel">
-                <i class="fas fa-check white orange-bg"></i>
-                <a href="#">Contact Insight</a>
-              </li>
-              <li class="rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Deals</a>
-              </li>
-              <li class="rel">
-                <i class="fas fa-check orange-bg"></i>
-                <a href="#">Task</a>
-              </li>
-            </ul>
-            <div class="txt-align">
-              <a class="btn big orange-bg" href="#">Learn More</a>
+            <!-- cella 4 -->
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_inbound.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">21k+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SEZIONE VERDE ACQUA CON TABELLA -->
-    <section class="table-sec h75vh txt-align rel">
-      <div class="center cont">
-        <h2 class="white">
-          Learn and grow with award-winnning support and a thriving community
-          behind you
-        </h2>
-        <p class="white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          iste rerum quisquam alias consequuntur pariatur necessitatibus earum
-          eum consequuntur!
-        </p>
-        <!-- inizio celle vere e proprie -->
-        <div class="h40vh clear-fix">
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img
-                src="img/homepage_community_agency.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">150+</h6>
-              <p class="white">Hubspot user grups</p>
+            <div class="cell w25 h50 rel">
+              <!-- cella 5 -->
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_connect.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">200+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-          </div>
-          <!-- cella 2 -->
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img
-                src="img/homepage_community_blog.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">4.5M</h6>
-              <p class="white">Hubspot user grups</p>
+            <!-- cella 6 -->
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_globe.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">6+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-          </div>
-          <!-- cella 3 -->
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img
-                src="img/homepage_community_academy.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">155K+</h6>
-              <p class="white">Hubspot user grups</p>
+            <!-- cella 7 -->
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/homepage_community_followers.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">2.6M+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
-          </div>
-          <!-- cella 4 -->
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img
-                src="img/homepage_community_inbound.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">21k+</h6>
-              <p class="white">Hubspot user grups</p>
-            </div>
-          </div>
-          <div class="cell w25 h50 rel">
-            <!-- cella 5 -->
-            <div class="center w70">
-              <img
-                src="img/homepage_community_connect.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">200+</h6>
-              <p class="white">Hubspot user grups</p>
-            </div>
-          </div>
-          <!-- cella 6 -->
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img
-                src="img/homepage_community_globe.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">6+</h6>
-              <p class="white">Hubspot user grups</p>
-            </div>
-          </div>
-          <!-- cella 7 -->
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img
-                src="img/homepage_community_followers.svg"
-                alt="stretta di mano"
-              />
-              <h6 class="white">2.6M+</h6>
-              <p class="white">Hubspot user grups</p>
-            </div>
-          </div>
-          <!-- cella 8 -->
-          <div class="cell w25 h50 rel">
-            <div class="center w70">
-              <img src="img/growthhub-white-small.svg" alt="stretta di mano" />
-              <h6 class="white">5K+</h6>
-              <p class="white">Hubspot user grups</p>
+            <!-- cella 8 -->
+            <div class="cell w25 h50 rel">
+              <div class="center w70">
+                <img
+                  src="img/growthhub-white-small.svg"
+                  alt="stretta di mano"
+                />
+                <h6 class="white">5K+</h6>
+                <p class="white">Hubspot user grups</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- MACRO-SEZ PRE-FOOTER 8 LOGHI
+      </section>
+      <!-- MACRO-SEZ PRE-FOOTER 8 LOGHI
         IN ALTO A DX IN CAMPO BIANCO-->
-    <section class="prefooter-sec h75vh w100">
-      <div class="cont h90 clear-fix rel">
-        <div class="w40 h100 f">
-          <!-- pre footer testo sx in alto -->
-          <div class="top-sx-box w50 h40">
-            <h5>64,500</h5>
-            <p>
-              costomers in over <strong> 100</strong> countries growing their
-              business with HubSpot
-            </p>
-          </div>
-          <!-- pre footer testo sx in basso-->
-          <div class="lower-sx-box w100 h60">
-            <h2>Start Growing With HubSpot Today</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              voluptatibus corporis voluptatem odio, exercitationem ab natus
-            </p>
-            <a class="btn big orange-bg" href="#">GetHubSpotFree</a>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        </div>
-        <!-- pre footer img dx in alto-->
-        <div class="w60 h100 f rel">
-          <img src="img/Atlassian-horizontal-blue.webp" alt="atlassias 4" />
-          <img src="img/doordash_owler.webp" alt="doordash 3" />
-          <img src="img/g2crowd.webp" alt="crowd 2" />
-          <img src="img/purple-logo.webp" alt="purple 1" />
-          <img src="img/Subaru_Logo.webp" alt="subaru 8" />
-          <img src="img/Wistia_logo.webp" alt="wistia 7" />
-          <img src="img/Classpass-logo.webp" alt="classpass 6" />
-          <img src="img/VMware_logo.webp" alt="vmware 5" />
-          <!-- img donna in basso dx pre-footer -->
-          <img src="img/woman.webp" alt="woman" />
-        </div>
-      </div>
-    </section>
-    <!-- GRANDE FOOTER BLU SCURO -->
-    <footer class="h75vh">
-      <div class="cont h100 ma">
-        <div class="h70 w100 clear-fix">
-          <!-- colonna 1 -->
-          <div class="w25 h100 f">
-            <h4 class="white">Increase Your Traffic</h4>
-            <p>Ad Sofware</p>
-            <p>Blog Software</p>
-            <p>SEO Software</p>
-            <p>Social Media Software</p>
-            <p>Content Menagement System</p>
-          </div>
-          <!-- colonna 2 -->
-          <div class="w25 h100 f">
-            <h4 class="white">Connect Whith Leads</h4>
-            <p>Find New Prospects</p>
-            <p>Email Tracking</p>
-            <p>Sales Email Templates</p>
-            <p>Click to Call Your Leads</p>
-            <p>Email Marketing</p>
-          </div>
-          <!-- colonna 3 -->
-          <div class="w25 h100 f">
-            <h4 class="white">Close and Manage Leads</h4>
-            <p>Document Tracking Tool</p>
-            <p>Meating Schedule Tool</p>
-            <p>Sales Automation Tool</p>
-            <p>Lead Management Tool</p>
-            <p>Pipeline Management Tool</p>
-          </div>
-          <!-- colonna 4 -->
-          <div class="w25 h100 f">
-            <h4 class="white">Support and Tools</h4>
-            <p>Hubspot Partners</p>
-            <p>Join a Local User Grup</p>
-            <p>Get a Free Website Report</p>
-            <p>HubSpot Templates</p>
-            <p>Free Tools & Generators</p>
-            <!-- bottone grigio e icone social -->
-            <a href="#">Contact HubSpot Support</a> <br />
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin-in"></i>
-          </div>
-        </div>
-        <!-- lingue scritte sotto-->
-        <div class="h10 w100 txt-align rel">
-          <ul class="w100">
-            <li class="inline"><a href="#">English</a></li>
-            <li class="inline"><a href="#">Deutsch</a></li>
-            <li class="inline"><a class="inline" href="#">日本語</a></li>
-            <li class="inline"><a href="#">Español</a></li>
-            <li class="inline"><a href="#">Português</a></li>
-            <li class="inline"><a href="#">Français</a></li>
-          </ul>
-        </div>
-        <!-- sotto ulitma linea orizzontale -->
-        <div class="h20 w100 clear-fix">
-          <div class="w50 h100 f rel">
-            <div class="txt-box">
-              <img src="img/hubspot-logo-footer.svg" alt="HubSpot" />
-              <p class="white">Copyright &copy; 2019 HubSpot, Inc.</p>
+      <section class="prefooter-sec h75vh w100">
+        <div class="cont h90 clear-fix rel">
+          <div class="w40 h100 f">
+            <!-- pre footer testo sx in alto -->
+            <div class="top-sx-box w50 h40">
+              <h5>64,500</h5>
+              <p>
+                costomers in over <strong> 100</strong> countries growing their
+                business with HubSpot
+              </p>
+            </div>
+            <!-- pre footer testo sx in basso-->
+            <div class="lower-sx-box w100 h60">
+              <h2>Start Growing With HubSpot Today</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt voluptatibus corporis voluptatem odio, exercitationem
+                ab natus
+              </p>
+              <a class="btn big orange-bg" href="#">GetHubSpotFree</a>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
           </div>
-          <div class="w50 h100 f rel">
-            <ul class="w100 txt-dx">
-              <li class="inline"><a href="#">Legal Stuff</a></li>
-              <li class="inline"><a href="#">Privacy Policy</a></li>
-            </ul>
+          <!-- pre footer img dx in alto-->
+          <div class="w60 h100 f rel">
+            <img src="img/Atlassian-horizontal-blue.webp" alt="atlassias 4" />
+            <img src="img/doordash_owler.webp" alt="doordash 3" />
+            <img src="img/g2crowd.webp" alt="crowd 2" />
+            <img src="img/purple-logo.webp" alt="purple 1" />
+            <img src="img/Subaru_Logo.webp" alt="subaru 8" />
+            <img src="img/Wistia_logo.webp" alt="wistia 7" />
+            <img src="img/Classpass-logo.webp" alt="classpass 6" />
+            <img src="img/VMware_logo.webp" alt="vmware 5" />
+            <!-- img donna in basso dx pre-footer -->
+            <img src="img/woman.webp" alt="woman" />
           </div>
         </div>
+      </section>
+      <!-- GRANDE FOOTER BLU SCURO -->
+      <footer class="h75vh">
+        <div class="cont h100 ma">
+          <div class="h70 w100 clear-fix">
+            <!-- colonna 1 -->
+            <div class="w25 h100 f">
+              <h4 class="white">Increase Your Traffic</h4>
+              <p>Ad Sofware</p>
+              <p>Blog Software</p>
+              <p>SEO Software</p>
+              <p>Social Media Software</p>
+              <p>Content Menagement System</p>
+            </div>
+            <!-- colonna 2 -->
+            <div class="w25 h100 f">
+              <h4 class="white">Connect Whith Leads</h4>
+              <p>Find New Prospects</p>
+              <p>Email Tracking</p>
+              <p>Sales Email Templates</p>
+              <p>Click to Call Your Leads</p>
+              <p>Email Marketing</p>
+            </div>
+            <!-- colonna 3 -->
+            <div class="w25 h100 f">
+              <h4 class="white">Close and Manage Leads</h4>
+              <p>Document Tracking Tool</p>
+              <p>Meating Schedule Tool</p>
+              <p>Sales Automation Tool</p>
+              <p>Lead Management Tool</p>
+              <p>Pipeline Management Tool</p>
+            </div>
+            <!-- colonna 4 -->
+            <div class="w25 h100 f">
+              <h4 class="white">Support and Tools</h4>
+              <p>Hubspot Partners</p>
+              <p>Join a Local User Grup</p>
+              <p>Get a Free Website Report</p>
+              <p>HubSpot Templates</p>
+              <p>Free Tools & Generators</p>
+              <!-- bottone grigio e icone social -->
+              <a href="#">Contact HubSpot Support</a> <br />
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+          <!-- lingue scritte sotto-->
+          <div class="h10 w100 txt-align rel">
+            <ul class="w100">
+              <li class="inline"><a href="#">English</a></li>
+              <li class="inline"><a href="#">Deutsch</a></li>
+              <li class="inline"><a class="inline" href="#">日本語</a></li>
+              <li class="inline"><a href="#">Español</a></li>
+              <li class="inline"><a href="#">Português</a></li>
+              <li class="inline"><a href="#">Français</a></li>
+            </ul>
+          </div>
+          <!-- sotto ulitma linea orizzontale -->
+          <div class="h20 w100 clear-fix">
+            <div class="w50 h100 f rel">
+              <div class="txt-box">
+                <img src="img/hubspot-logo-footer.svg" alt="HubSpot" />
+                <p class="white">Copyright &copy; 2019 HubSpot, Inc.</p>
+              </div>
+            </div>
+            <div class="w50 h100 f rel">
+              <ul class="w100 txt-dx">
+                <li class="inline"><a href="#">Legal Stuff</a></li>
+                <li class="inline"><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- CHAT FIXED IN BASSO -->
+      <i class="fas fa-comments" id="chat"></i>
+      <div id="window">
+        <div class="rel h10">
+          <img src="img/io.jpg" alt="Marco" />
+          <span>Marco</span>
+        </div>
+        <div class="w100 h80">
+          <p id="sendedMessage">
+            Per dubbi e perplessità puoi chattare con l'operatore!
+          </p>
+        </div>
+        <div class="w100 h10 rel">
+          <input
+            id="inputMessage"
+            type="text"
+            placeholder="...type here"
+            class="w80 h100"
+          />
+          <i id="btnSend" class="far fa-paper-plane rel"></i>
+        </div>
       </div>
-    </footer>
-    <i class="fas fa-comments" id="chat"></i>
-    <div id="window">
-      <div class="rel h10">
-        <img src="img/io.jpg" alt="Marco" />
-        <span>Marco</span>
-      </div>
-      <div class="w100 h80">
-        <p id="sendedMessage">
-          Per dubbi e perplessità puoi chattare con l'operatore!
-        </p>
-      </div>
-      <div class="w100 h10 rel">
-        <input
-          id="inputMessage"
-          type="text"
-          placeholder="...type here"
-          class="w80 h100"
-        />
-        <i id="btnSend" class="far fa-paper-plane rel"></i>
-      </div>
+    </div>
+    <!-- MENU LINGUE AL CLICK IN 
+      ALTO A SX LINK LINGUE -->
+    <div id="languageMenu" class="center">
+      <li>
+        <img src="./img/germania.png" alt="bandiera-Germania" />
+        <a>Deutsche</a>
+      </li>
+      <li>
+        <img src="img/francia.png" alt="bandiera-Francia" />
+        <a>Français</a>
+      </li>
+      <li>
+        <img src="img/spagna.png" alt="bandiera-Spagna" />
+        <a>Español</a>
+      </li>
+      <li>
+        <img src="img/portogallo.png" alt="bandiera-Portogallo" />
+        <a>Português</a>
+      </li>
+      <li>
+        <img src="img/cina.png" alt="bandiera-Cina" />
+        <a>中国人</a>
+      </li>
+      <li>
+        <a> <span>&#10005;</span> EXIT</a>
+      </li>
     </div>
     <!-- LINK A FILE JS -->
     <script src="index.js"></script>

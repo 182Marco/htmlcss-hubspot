@@ -349,6 +349,7 @@ footer .w25 a {
   border-radius: 7px;
   margin: 10% 0;
   border: 5px solid transparent;
+  transition: all 0.3s;
 }
 footer .w25 a:hover {
   border: 5px solid #ddd;
@@ -441,6 +442,7 @@ footer .h20 li:last-child {
   bottom: 3%;
   left: 88%;
   font-size: 3vw;
+  transition: all 0.5s;
 }
 #chat:hover {
   color: #fff;

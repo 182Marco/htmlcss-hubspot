@@ -459,7 +459,7 @@ footer .h20 li:last-child {
   overflow: hidden;
 }
 
-.window {
+#window {
   position: absolute;
   left: 0;
   height: 50vh;
@@ -469,8 +469,6 @@ footer .h20 li:last-child {
   border-radius: 50px;
   animation: outOfPocket 0.35s 1 forwards;
   overflow: hidden;
-}
-#window {
   animation: outOfPocket 0.35s 1;
 }
 
@@ -480,19 +478,6 @@ footer .h20 li:last-child {
   }
   100% {
     bottom: 0vh;
-  }
-}
-
-#windowClose {
-  animation: insidePocket 0.35s 1;
-}
-
-@keyframes insidePocket {
-  0% {
-    bottom: 0vh;
-  }
-  100% {
-    bottom: -50vh;
   }
 }
 
@@ -567,6 +552,7 @@ footer .h20 li:last-child {
   padding: 0.3vw;
   border-radius: 50%;
   border: 3px solid #198dcc;
+  transition: all 0.5s;
 }
 #btnSend:hover {
   background-color: #198dcc;

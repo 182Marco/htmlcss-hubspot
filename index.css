@@ -879,6 +879,7 @@ section li {
   border: 2px solid #fe775a;
   font-size: 0.8rem;
   border-radius: 5px;
+  transition: all 0.3s;
 }
 .btn:hover {
   color: #fe775a;
@@ -889,13 +890,14 @@ section li {
   padding: 1vw 0.3vw;
   min-width: 10vw;
   border: 3px solid #fe775a;
+  transition: all 0.3s;
+  font-weight: 700;
 }
 
 .btn.big:hover {
   color: #fe775a;
   background-color: #fff;
   border: 3px solid #fe775a;
-  font-weight: 700;
 }
 
 /* UTILITY larghezze */

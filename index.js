@@ -1,3 +1,9 @@
+// mettere in variabile una node list dei menu in
+// modo da chiuderli tutti quando si fa per aprirne un
+// altro avendo lasciato il precedente aperto
+
+var menu = document.querySelectorAll('.menu');
+
 // COMPARSA MENU A TENDINA LINGUE SCOMPARSA SITO
 let engl = document.querySelector('#english');
 let language = document.querySelector('#language');
@@ -7,10 +13,11 @@ engl.addEventListener('click', showMenuLanguage);
 
 function showMenuLanguage() {
   // far chiudere tutti gli altri menu
-  aboutM.style.display = 'none';
-  partenerM.style.display = 'none';
-  resourceseM.style.display = 'none';
-  softwareMenu.style.display = 'none';
+  var i;
+  for (i = 0; i < menu.length; i++) {
+    menu[i].style.display = 'none';
+  }
+  // far apparire scelta lingua e sparire sito
   language.style.display = 'block';
   siteContent.setAttribute('id', 'siteContentAnimation');
   language.setAttribute('id', 'languageMenu');
@@ -46,9 +53,10 @@ soft.addEventListener('click', showMenusoftware);
 
 function showMenusoftware() {
   // far chiudere tutti gli altri menu
-  aboutM.style.display = 'none';
-  partenerM.style.display = 'none';
-  resourceseM.style.display = 'none';
+  var i;
+  for (i = 0; i < menu.length; i++) {
+    menu[i].style.display = 'none';
+  }
   if (softwareMenu.style.display == 'none') {
     softwareMenu.style.display = 'block';
   } else {
@@ -64,9 +72,10 @@ resources.addEventListener('click', showMenuResource);
 
 function showMenuResource() {
   // far chiudere tutti gli altri menu
-  aboutM.style.display = 'none';
-  partenerM.style.display = 'none';
-  softwareMenu.style.display = 'none';
+  var i;
+  for (i = 0; i < menu.length; i++) {
+    menu[i].style.display = 'none';
+  }
   if (resourceseM.style.display == 'none') {
     resourceseM.style.display = 'block';
   } else {
@@ -83,9 +92,10 @@ partener.addEventListener('click', showMenuPartener);
 
 function showMenuPartener() {
   // far chiudere tutti gli altri menu
-  aboutM.style.display = 'none';
-  resourceseM.style.display = 'none';
-  softwareMenu.style.display = 'none';
+  var i;
+  for (i = 0; i < menu.length; i++) {
+    menu[i].style.display = 'none';
+  }
   if (partenerM.style.display == 'none') {
     partenerM.style.display = 'block';
   } else {
@@ -99,9 +109,10 @@ let aboutM = document.querySelector('#aboutM');
 
 about.addEventListener('click', () => {
   // far chiudere tutti gli altri menu
-  partenerM.style.display = 'none';
-  resourceseM.style.display = 'none';
-  softwareMenu.style.display = 'none';
+  var i;
+  for (i = 0; i < menu.length; i++) {
+    menu[i].style.display = 'none';
+  }
   if (aboutM.style.display == 'none') {
     aboutM.style.display = 'block';
   } else {

@@ -19,7 +19,7 @@ header {
 }
 
 /*  navabar (sono relative
-per elementi al loro interno) _ */
+per elementi al loro interno) */
 nav {
   font-weight: 500;
 }
@@ -87,12 +87,6 @@ main .txt-wrapper .txt-max-w {
 /* jumbotrone spaziatura tra i testi */
 main .txt-wrapper .txt-max-w p {
   margin: 4vh 0;
-}
-
-/* jumbotrone sotto per mostrare i menu a cascata
-quindi riportare in alto bottone per renderlo 
-cliccabile e possibile stao hover */
-main .txt-wrapper .txt-max-w a {
 }
 
 /* barra sovrapposta img del jumbotorne */
@@ -1075,7 +1069,3 @@ section li {
 i {
   cursor: pointer;
 }
-/* 
-#site-content {
-  display: none;
-} */

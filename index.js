@@ -139,40 +139,16 @@ let sendedMessage = document.querySelector('#sendedMessage');
 let inputMessage = document.querySelector('#inputMessage');
 let btnSend = document.querySelector('#btnSend');
 
-inputMessage.addEventListener('keypress', sentMessage);
-btnSend.addEventListener('click', sentMessageTwo);
+inputMessage.addEventListener('keypress', sentMessageInvio);
+btnSend.addEventListener('click', sentMessage);
 
-function sentMessage() {
+function sentMessageInvio() {
   if (event.keyCode == 13) {
-    if (
-      sendedMessage.innerText ==
-      `Per dubbi e perplessità puoi chattare con l'operatore!`
-    ) {
-      sendedMessage.innerText = ``;
-    }
-    var para = document.createElement('p');
-    sendedMessage.appendChild(para);
-    if (inputMessage.value != '') {
-      para.innerText = inputMessage.value;
-      para.classList.add('styleMessage');
-      inputMessage.value = '';
-      if (document.querySelector('#alt') != null) {
-        document.querySelector('#alt').remove();
-      }
-    } else if (document.querySelector('#alt') != null) {
-      document.querySelector('#alt').remove();
-      para.innerText = 'Scrivi un messaggio prima di premere invio';
-      para.classList.add('alt');
-      para.setAttribute('id', 'alt');
-    } else {
-      para.innerText = 'Scrivi un messaggio prima di premere invio';
-      para.classList.add('alt');
-      para.setAttribute('id', 'alt');
-    }
+    sentMessage();
   }
 }
 
-function sentMessageTwo() {
+function sentMessage() {
   if (
     sendedMessage.innerText ==
     `Per dubbi e perplessità puoi chattare con l'operatore!`

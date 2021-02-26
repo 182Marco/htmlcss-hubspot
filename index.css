@@ -460,7 +460,6 @@ footer .h20 li:last-child {
 }
 
 #window {
-  display: none;
   position: absolute;
   left: 0;
   bottom: -100%;

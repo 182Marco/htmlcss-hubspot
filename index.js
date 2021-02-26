@@ -125,6 +125,8 @@ about.addEventListener('click', () => {
 let chatIcon = document.querySelector('#chat');
 let chat = document.querySelector('#window');
 
+chat.style.display = 'none';
+
 chatIcon.addEventListener('click', () => {
   if (chat.style.display == 'none') {
     console.log('appare');

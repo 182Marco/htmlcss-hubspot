@@ -129,25 +129,23 @@ chat.style.display = 'none';
 
 chatIcon.addEventListener('click', () => {
   if (chat.style.display == 'none') {
-    console.log('appare');
     chat.style.display = 'block';
     var intUp = setInterval(setPosUp, 1);
     var position = -100;
     function setPosUp() {
       if (position < 0) {
-        position = position + 2;
+        position += 2;
         chat.style.bottom = position + '%';
       } else {
         clearInterval(intUp);
       }
     }
   } else {
-    console.log('scompare');
     var int = setInterval(setPosDown, 1);
     var position = 0;
     function setPosDown() {
       if (position > -100) {
-        position = position - 2;
+        position -= 2;
         chat.style.bottom = position + '%';
       } else {
         clearInterval(int);
